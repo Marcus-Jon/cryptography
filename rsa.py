@@ -69,7 +69,7 @@ if __name__ == '__main__':
         ciphertext = encryption(message, own_public_key[0], own_public_key[1])
         print ciphertext
     elif mode == 'decrypt':
-        original_message = decryption(ciphertext, own_private_key[0], own_private_key[1])
+        original_message = decryption(message, own_private_key[0], own_private_key[1])
         print '\n'
         print '\n', 'Message: '
         print original_message
